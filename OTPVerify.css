@@ -1,0 +1,159 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* Main Card */
+.otp-card {
+  width: 420px;
+  max-width: 92%;
+  margin: 70px auto;
+  padding: 26px 24px 24px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    0 8px 16px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Smooth entry */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.otp-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.3px;
+}
+
+/* Subtitle */
+.otp-subtitle {
+  margin: 6px 0 22px;
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+/* OTP Boxes Row */
+.otp-box-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+/* OTP Input */
+.otp-input {
+  width: 56px;
+  height: 58px;
+  border-radius: 14px;
+  border: 1.8px solid #d1d5db;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  outline: none;
+  background: #f8fafc;
+  transition: all 0.25s ease;
+}
+
+/* Focus Effect */
+.otp-input:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Disabled Input (after verify) */
+.otp-input:disabled {
+  background: #e5e7eb;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Buttons Row */
+.btn-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+/* Button Base */
+.btn {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Verify Button */
+.btn-verify {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.35);
+}
+
+.btn-verify:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.45);
+}
+
+.btn-verify:disabled {
+  background: #22c55e;
+  box-shadow: 0 8px 16px rgba(34, 197, 94, 0.35);
+  cursor: default;
+}
+
+/* Resend Button */
+.btn-resend {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.btn-resend:hover {
+  background: #020617;
+}
+
+.btn-resend:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Message Box */
+.message {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Note / Info */
+.note {
+  margin-top: 16px;
+  font-size: 12.5px;
+  color: #64748b;
+  line-height: 1.6;
+}
