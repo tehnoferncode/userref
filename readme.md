@@ -32,3 +32,30 @@ Used for:
 
 ## 📂 Project Structure
 
+react-otp-verification-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── App.js
+│   │
+│   ├── components/
+│   │   ├── OTPVerify.js
+│   │   └── OTPVerify.css
+│   │
+│   ├── index.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
+App.js → Main entry, sirf OTP component call
+
+components/OTPVerify.js → OTP logic (useRef, useEffect, timer, focus)
+
+components/OTPVerify.css → Premium UI styling
+
+index.js → React root render file
+
+README.md → Project documentation
+
